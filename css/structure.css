@@ -98,7 +98,7 @@ body{
     flex: 0;
     display: none;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:765px){
     body{
         overflow: scroll;
     }
@@ -158,17 +158,28 @@ body{
 
 }
 /*內容*/
-.ct-1{
-    height: 100px;
-}
-.ct-1 h1{
-    position:relative;
-    top:50px;
-}
+
 
 h1{
+    font-size: 65px;
     font-weight: normal;
 }
+
+h2{
+    font-size: 32px;
+    font-weight: normal;
+  }
+@media screen and (max-width:765px){
+    h1{
+        font-size: 45px;
+        font-weight: normal;
+    }
+    
+    h2{
+        font-size: 26px;
+        font-weight: normal;
+      }
+  }
 /*底部*/
 footer{
     width: 100%;
@@ -222,7 +233,10 @@ footer .container .inlink p{
     position: relative;
     margin-bottom: 15px;
 }
-@media screen and (max-width:800px){
+.footct ul{
+    margin: 10px;
+}
+@media screen and (max-width:765px){
     footer{
     width: 100%;
     position: relative;
@@ -239,5 +253,8 @@ footer .container .inlink p{
     footer .container{ 
         width: 100%;
         display: block;
+    }
+    .outlink{
+        clear: left;
     }
 }

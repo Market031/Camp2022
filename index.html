@@ -15,28 +15,61 @@
         margin: 20px;
 
       }
-      .ct-5 div{
-        background-color: darkgray;
-        border: 1px solid;
-        margin-bottom: 50px;
-        padding: 20px;
+      .ct-1{
+        /*
+        height: 100px;
+        */
+        box-sizing: border-box;
+        padding: 40vh 0;
+        background-color: rgb(240, 143, 123);
+        height: 100vh;
 
       }
-      .cintainer h1{
-        font-size: 65px;
+      .ct-1 h2{     
+        text-align: center;
+       /* position:relative;
+        top:50px;   */       
       }
-      .cintainer h2{
-        font-size: 32px;
+      .ct-1 h1{     
+        text-align: center;
+        margin: 10px;
+       /* position:relative;
+        top:50px;   */       
+      }
+      .timer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center
+      }
+      .time{
+        text-align: center;
+        font-size: 25px;
+        margin: 5px;
+        box-sizing: border-box;
+        padding: 20px 0 0 0;
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+        display:block;
+	      background: #ffffff;
+      }     
+      .ct-5 div{
+        /*background-color: darkgray;
+        border: 1px solid;*/
+        margin-bottom: 50px;
+        padding: 20px 0 0 0;
+      }
+      img[alt="organizet"]{
+        width: 250px;
       }
       .co-organizet-all{
         display: flex;
-        flex: 1;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: center
       }
-      .co-organizet{
-        
+      .co-organizet{       
         display: block;
-        border: 1px solid;
+        /*border: 1px solid;*/
         box-sizing:border-box;
         width: 250px;
 
@@ -47,29 +80,43 @@
       img[alt="organizet"]{
         width: 150px;
       }
-      @media screen and (max-width:1280px){
 
-      }
-      @media screen and (max-width:768px){
+      @media screen and (max-width:765px){
         .co-organizet-all{
         display: flex;
         flex-direction: column;   
         }
-        .cintainer h1{
-          font-size: 45px;
-        }
-        .cintainer h2{
-          font-size: 26px;
-        }     
-        img[alt="organizet"]{
-        width: 100%;
-      }
         .co-organizet{ 
           display: block;
-          border: 1px solid;
+          /*border: 1px solid;*/
           box-sizing:border-box;
           width: 100%;
        }
+       .timer{
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        
+
+      }
+       .time{
+        text-align: center;
+        font-size: 15px;
+        margin: 5px;
+        width: 50px;
+        height: 50px;
+        padding: 5px 0;
+
+        border-radius: 40px;
+        display:block;
+	      background: #ffffff;
+      }
+      .ct-1 h1{     
+        font-size: 45px;
+        text-align: center;
+       /* position:relative;
+        top:50px;   */       
+      }
       }
      
       
@@ -108,7 +155,26 @@
 
     <!-- Container -->
     <div class="ct-1">
-      <h1 >115級行管x應數宿營</h1>
+      <h1>行上人</br>非你莫數</h1>
+      <h2>115級行管x應數宿營</h2>
+      <div class="timer">
+        <div class="time">
+            <span id="time-days">-</span>
+            <p>天</p>
+        </div>
+        <div class="time">
+            <span id="time-hours">-</span>
+            <p>時</p>
+        </div>
+        <div class="time">
+            <span id="time-minutes">-</span>
+            <p>分</p>
+        </div>
+        <div class="time">
+            <span id="time-seconds">-</span>
+            <p>秒</p>
+        </div>
+      </div>
     </div>
     <div class="cintainer ct-2">
       <h1>營隊簡介</h1>
@@ -176,5 +242,7 @@
       </div>
     </footer>
     <script src="js/nav.js"></script>
+    <script src="js/timer.js"></script>
+
   </body>
 </html>
