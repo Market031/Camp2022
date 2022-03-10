@@ -9,6 +9,61 @@
           href="css/subtitle.css">
     <meta name="viewport" 
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>
+   
+    .ct-team{
+      display: grid;
+      justify-content: center;
+      grid-template-columns: auto auto auto;
+      gap: 1vw;
+      padding: 1vw;
+     }
+
+     .team{
+       background-color: aqua;
+       width: 31.5vw;
+       height: 21vw;
+       box-sizing: border-box;
+
+      }
+      footer{
+        clear: both;
+      }
+    @media screen and (max-width:1280px){
+      .ct-team{
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 1vw;
+      padding: 1vw;
+     }
+     .team{
+      background-color: aqua;
+       border: 1px solid black;
+       width: 47vw;
+       height: 32vw;
+       box-sizing: border-box;
+      }
+    }
+     @media screen and (max-width:765px){
+      .ct-team{
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: auto ;
+      gap: 1vw;
+      padding: 1vw;
+     }
+     .team{
+      background-color: aqua;
+       border: 1px solid black;
+       width: 93vw;
+       height: 62vw;
+       box-sizing: border-box;
+      }
+    }
+    
+
+    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -40,8 +95,32 @@
     </nav>
 
     <!-- Container -->
-    <div class="cintainer ct-1">
-      <h1>認識隊員</h1>
+    <div class="ct-1">
+      <h1>小隊資訊</h1>
+    </div>
+    <div class="cintainer ct-2">
+    <h1>小隊們</h1>
+      <div class="ct-team">
+        <div class="team1 team">
+          <h2>第一小隊</h2>
+        </div>
+        <div class="team2 team">
+          <h2>第二小隊</h2>
+        </div>
+        <div class="team3 team">
+          <h2>第三小隊</h2>
+        </div>
+      
+        <div class="team4 team">
+          <h2>第四小隊</h2>
+        </div>
+        <div class="team5 team">
+          <h2>第五小隊</h2>
+        </div>
+        <div class="team6 team">
+          <h2>第六小隊</h2>
+        </div>
+      </div>
     </div>
     <!-- Footer -->
     <footer>

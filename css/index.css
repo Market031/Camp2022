@@ -1,0 +1,106 @@
+.cintainer{
+    padding: 20px;
+    background-color: aliceblue;
+    text-align: center;
+    margin: 20px;
+
+  }
+  .ct-1{
+    /*
+    height: 100px;
+    */
+    box-sizing: border-box;
+    padding: 40vh 0;
+    background-color: rgb(240, 143, 123);
+    height: 100vh;
+  }
+  .ct-1 h2{     
+    text-align: center;
+   /* position:relative;
+    top:50px;   */       
+  }
+  .ct-1 h1{     
+    text-align: center;
+    margin: 10px;
+   /* position:relative;
+    top:50px;   */       
+  }
+  .timer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+  }
+  .time{
+    text-align: center;
+    font-size: 25px;
+    margin: 5px;
+    box-sizing: border-box;
+    padding: 20px 0 0 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    display:block;
+      background: #ffffff;
+  }     
+  .ct-5 div{
+    /*background-color: darkgray;
+    border: 1px solid;*/
+    margin-bottom: 50px;
+    padding: 20px 0 0 0;
+  }
+  img[alt="organizet"]{
+    width: 250px;
+  }
+  .co-organizet-all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+  }
+  .co-organizet{       
+    display: block;
+    /*border: 1px solid;*/
+    box-sizing:border-box;
+    width: 250px;
+  }
+  .co-organizet img{
+    width: 150px;
+  }
+  img[alt="organizet"]{
+    width: 150px;
+  }
+
+@media screen and (max-width:765px){
+    .co-organizet-all{
+    display: flex;
+    flex-direction: column;   
+    }
+    .co-organizet{ 
+      display: block;
+      /*border: 1px solid;*/
+      box-sizing:border-box;
+      width: 100%;
+    }
+   .timer{
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    }
+    .time{
+        text-align: center;
+        font-size: 15px;
+        margin: 5px;
+        width: 50px;
+        height: 50px;
+        padding: 5px 0;
+
+        border-radius: 40px;
+        display:block;
+        background: #ffffff;
+    }
+    .ct-1 h1{     
+        font-size: 45px;
+        text-align: center;
+    /* position:relative;
+        top:50px;   */       
+    }
+}

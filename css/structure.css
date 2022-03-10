@@ -57,8 +57,6 @@ body{
     display: flex;
     flex: 1;
     justify-content: space-around;
-   
-    
 }
 .inlogo{
     display: none;
@@ -76,7 +74,9 @@ body{
 .navbar-nav a:hover{
     color: #fe929f;
 }
-
+.maun{
+    padding: 10px;
+}
 .maun div{
     width: 25px;
     height: 3px;
@@ -91,8 +91,8 @@ body{
     .navbar-nav{
         display: flex;
         justify-content: space-around;
-        
     }
+
 }
 .maun {
     flex: 0;
@@ -163,12 +163,20 @@ body{
 h1{
     font-size: 65px;
     font-weight: normal;
+    margin: 10px;
+
 }
 
 h2{
     font-size: 32px;
     font-weight: normal;
   }
+  .cintainer{
+    padding: 20px;
+    background-color: aliceblue;
+    text-align: center;
+
+}
 @media screen and (max-width:765px){
     h1{
         font-size: 45px;
@@ -185,6 +193,7 @@ footer{
     width: 100%;
     position: relative;
     height: auto;
+    margin: 100px 0;
     padding: 10px 100px;
     background:rgb(255, 247, 235);
     border-top: 1px solid rgb(231, 231, 231);
@@ -248,6 +257,7 @@ footer .container .inlink p{
     .footct{
         float: left;
         width: 50%;
+        padding-bottom: 20px;
 
     }
     footer .container{ 
