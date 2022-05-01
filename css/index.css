@@ -16,6 +16,9 @@
 
     height: 100vh;
   }
+  .title_font{
+    margin: 10px;
+  }
   .ct-1 h2{     
     text-align: center;
     color: white;

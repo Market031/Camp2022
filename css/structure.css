@@ -1,12 +1,18 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../font/wt064.ttf);
+  }
+  
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family:"微軟正黑體", sans-serif;
+
 }
 
 body{
     background:rgb(254, 246, 234);
+    font-family:"微軟正黑體", sans-serif;
 }
 
 .navbar{
@@ -200,7 +206,9 @@ body{
 
 }
 /*內容*/
-
+.ct-1{
+    font-family:"myFirstFont","微軟正黑體", sans-serif;
+}
 
 h1{
     font-size: 65px;
