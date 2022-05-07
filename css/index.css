@@ -57,13 +57,44 @@
       background: #ffffff;
   }   
   /*ct-2*/
-  .ct-2_in {
-    background-color: aquamarine;
-    float: left;
-    width: 50%;
-    padding: 50px;
+  .ct-2 > div{
+    padding: 20px;
+    display:grid;
+    justify-content:center;
+    grid-template-columns: 40vw 40vw ;
+    padding:10px;
+    gap: 10px;
   }
+  .ct-2_in {
+    /*.border: 1px solid #808080;*/
+     background: #ffffff;
+  }
+  .ct-2_in div{
+    color: #808080;
 
+  }
+  /*.goal{
+    line-height: 50px;
+
+  }*/
+  /*@media screen and (max-width:1280px){
+    .ct-2_in {
+      padding: 0 50px;
+    }
+  }*/
+  @media screen and (max-width:765px){
+
+    .ct-2 > div{
+      display:block;
+    }
+    .ct-2_in{
+      margin: 25px 10px;
+      padding: auto 10px;
+      float: none;
+      width: auto;
+
+    }
+  }
   /*ct-4*/
   .Sing_up_information{
     display:grid;
@@ -78,9 +109,7 @@
     height: 440px;
     border: 1px solid;
   }
-  .Sing_up_information h2{
-    margin: 20px
-  }
+
   .information > div{
     text-align:left;
     padding: 5px 5px;
@@ -97,12 +126,39 @@
 
   }
   #SignUp-link{
+    font-family:"myFirstFont","微軟正黑體", sans-serif;
+    border-radius: 4px;
+    text-align: center;
     text-decoration: none;
     color: white;
-    border: 1px solid;
+    width: 500px;
+    border-bottom:4px solid gray;
     padding: 10px;
     font-size: 30px;
-    background-color: rgb(247, 16, 16);
+    transition: all 0.5s;
+    cursor: pointer;
+    background-color: #f4511e;
+  }
+  #SignUp-link span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  #SignUp-link:hover span {
+    padding-right: 25px;
+  }
+  #SignUp-link span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  #SignUp-link:hover span:after {
+    opacity: 1;
+    right: 0;
   }
   #SignUp-link:hover{
     background-color: rgb(238, 138, 138);
