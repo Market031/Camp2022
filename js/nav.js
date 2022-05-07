@@ -18,6 +18,7 @@ const navSlide = ()=>{
     }
   });
 }
+/*
 function navbar_word(){
   const navlinks = document.querySelectorAll('.navbar-nav a');
   const w = window.innerWidth;
@@ -32,40 +33,63 @@ function navbar_word(){
       }
   }
 }
-function navbar_Background() { 
-  const nav = document.querySelector('.navbar');
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    nav.style.background = "rgb(254, 246, 234,0.9)";
-  
-    nav.style.height= "60px";
-  } 
-  else {
-    nav.style.background = "rgb(254, 246, 234,0)";
-    
-    nav.style.height= "100px";
-  }
-}
-function navbar_loge() {
+*/
+function navbar_Background_loge_word() { 
+  topButtom();
+  let i = 0;
   const loge =  document.querySelector('.navbar-brand img');
+  const nav = document.querySelector('.navbar');
+  const navlinks = document.querySelectorAll('.navbar-nav a');
+  const w = window.innerWidth;
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    loge.src = "img/logtext.png";  
+    loge.src = "img/logtext.png";
+
+    nav.style.background = "rgb(254, 246, 234,0.9)";
+    nav.style.height= "60px";  
+
+    for (i = 0; i < navlinks.length; i++) {
+      navlinks[i].style.color = "#7d8180";
+    }
   } 
   else {
     loge.src = "img/logtext_2.png";
-  }
-}  
-function scrollFunction() {
-  navbar_word();
-  navbar_Background();
-  navbar_loge()
-}
 
+    nav.style.background = "rgb(254, 246, 234,0)";
+    nav.style.height= "100px";
+
+    if(w > 765){
+      for (i = 0; i < navlinks.length; i++) {
+        navlinks[i].style.color = "white";
+        } 
+      }
+    else{
+      for (i = 0; i < navlinks.length; i++) {
+        navlinks[i].style.color = "#7d8180";
+      }
+    }
+  }
+}
+function topButtom(){
+  tpButt = document.getElementById("BackUp");
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    tpButt.style.display = "block";
+  }
+  else{
+    tpButt.style.display = "none";
+  }
+}
+const BackUp = document.querySelector("#BackUp");
+BackUp.addEventListener("click", function(){
+  window.scrollTo({
+    top: 0,left: 0,behavior: "smooth"
+  })
+});
 
 
 navSlide();
-scrollFunction();
-window.onscroll = function() {scrollFunction()};
+navbar_Background_loge_word() ;
+window.onscroll = function() {navbar_Background_loge_word() };
 window.addEventListener("resize", function(){
-  scrollFunction(); 
+  navbar_Background_loge_word() ; 
 });
 

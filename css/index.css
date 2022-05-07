@@ -1,3 +1,7 @@
+@font-face {
+  font-family: myFirstFont;/*紀念第一個放入的字體 XD*/
+  src: url(../font/wt064.ttf);
+}
 .cintainer{
     padding: 20px;
     background-color: aliceblue;
@@ -10,13 +14,15 @@
     /*
     height: 100px;
     */
-    background: url(indexbackground.gif);
+    font-family:"myFirstFont","微軟正黑體", sans-serif !important;
+
     box-sizing: border-box;
     padding: 40vh 0;
 
     height: 100vh;
   }
   .title_font{
+    font-family:"myFirstFont","微軟正黑體", sans-serif ;
     margin: 10px;
   }
   .ct-1 h2{     
@@ -50,6 +56,14 @@
     display:block;
       background: #ffffff;
   }   
+  /*ct-2*/
+  .ct-2_in {
+    background-color: aquamarine;
+    float: left;
+    width: 50%;
+    padding: 50px;
+  }
+
   /*ct-4*/
   .Sing_up_information{
     display:grid;

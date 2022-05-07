@@ -1,7 +1,7 @@
 .ct-1{
     box-sizing: border-box;
     padding: 35vh 0 0 5vh;
-    background-color: black;
+    background-color: gray;
     color: white;
     height: 50vh;
   }
@@ -9,7 +9,7 @@
     .ct-1{
     box-sizing: border-box;
     padding: 20vh 0 0 2vh;
-    background-color: gray;
+    background-color: black;
     color: white;
     height: 30vh;
     }

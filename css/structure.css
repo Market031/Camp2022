@@ -1,7 +1,19 @@
-@font-face {
+/*@font-face {
     font-family: myFirstFont;
     src: url(../font/wt064.ttf);
+  }*/
+@font-face {
+    font-family: TaipeiSans-Regular;
+    src: url(../font/TaipeiSansTCBeta-Regular.ttf);
+}
+@font-face {
+    font-family: SourceHan-Regular;
+    src: url(../font/SourceHanSerifTC-Regular.otf);
   }
+@font-face {
+    font-family: SourceHan-bold;
+    src: url(../font/SourceHanSerifTC-bold.otf);
+}
   
 *{
     margin: 0px;
@@ -11,9 +23,29 @@
 }
 
 body{
-    background:rgb(254, 246, 234);
-    font-family:"微軟正黑體", sans-serif;
+    background:white;
+    font-family:"SourceHan-Regular","微軟正黑體", sans-serif;
 }
+
+#BackUp {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: red;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+  }
+  #BackUp:active {
+    background-color: #cc2333;
+  }
 
 .navbar{
     top: 0;
@@ -206,15 +238,14 @@ body{
 
 }
 /*內容*/
-.ct-1{
+/*.ct-1{
     font-family:"myFirstFont","微軟正黑體", sans-serif;
-}
-
+}*/
 h1{
     font-size: 65px;
+    font-family:"SourceHan-bold","微軟正黑體", sans-serif;
     font-weight: normal;
     margin: 10px;
-
 }
 
 h2{
@@ -245,7 +276,7 @@ footer{
     height: auto;
     margin: 100px 0;
     padding: 10px 100px;
-    background:rgb(255, 247, 235);
+    background:rgb(255, 255, 255);
     border-top: 1px solid rgb(231, 231, 231);
 
 }
