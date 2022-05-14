@@ -1,19 +1,8 @@
-@font-face {
-    font-family: myFirstFont;/*紀念第一個放入的字體 XD*/
-    src: url(../font/wt064.ttf);
-  }
-@font-face {
-    font-family: TaipeiSans-Regular;
-    src: url(../font/TaipeiSansTCBeta-Regular.ttf);
-}
+
 @font-face {
     font-family: SourceHan-Regular;
     src: url(../font/SourceHanSerifTC-Regular.otf);
   }
-@font-face {
-    font-family: SourceHan-bold;
-    src: url(../font/SourceHanSerifTC-bold.otf);
-}
   
 *{
     margin: 0px;
@@ -223,9 +212,6 @@ body{
 
 }
 /*內容*/
-.ct-1{
-    font-family:"myFirstFont","TaipeiSans-Regular","微軟正黑體", sans-serif;
-}
 h1{
     font-weight: bold;
     font-size: 65px;

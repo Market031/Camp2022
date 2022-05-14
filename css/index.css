@@ -18,7 +18,7 @@
     height: 100%;
   }
   .title_font{
-    font-family:"myFirstFont","微軟正黑體", sans-serif ;
+    font-weight: bolder;
     margin: 10px;
   }
   .ct-1 h2{     
