@@ -190,9 +190,7 @@
     margin-bottom: 50px;
     padding: 20px 0 0 0;
   }
-  img[alt="organizet"]{
-    width: 250px;
-  }
+
   .co-organizet-all{
     display: flex;
     flex-wrap: wrap;

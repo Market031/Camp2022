@@ -76,15 +76,12 @@ body{
     z-index: -1;
 
 }
-
 .navbar-brand{
     /*position: relative;
     top:-5px;*/
-    
     letter-spacing: 5px;
     font-size: 10px;
     display: block;
-    
     width: 250px;
     color: black;
 }
@@ -94,30 +91,11 @@ body{
     float: left;
     height: 60px;
 }
-.navbar-brand img[alt="text"]{
+/*
+.navbar-brand img[alt="text"]{一開始的文字不是圖片
     display: block;
     float: left;
     height: 60px;
-}
-/*.navbar-brand img[alt="text"]{
-    display: block;
-    float: left;
-    height: 60px;
-
-}*/
-
-.navbar-brand div{
-    border: solid;
-    padding-left: 4px;
-    float: left;
-    width: 150px;
-    height: 60px; 
-    font-size: 12px;
-}
-
-/*.navbar-brand img{
-    position: relative;
-    top:10px;
 }*/
 
 .navbar-nav{
