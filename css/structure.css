@@ -7,13 +7,13 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family:"SourceHan-Regular","微軟正黑體", sans-serif;
     box-sizing: border-box;
 
 }
 
 body{
     background:white;
-    font-family:"SourceHan-Regular","微軟正黑體", sans-serif;
 }
 
 #BackUp {
