@@ -35,7 +35,6 @@ function navbar_word(){
 }
 */
 function navbar_Background_loge_word() { 
-  topButtom();
   let i = 0;
   const loge =  document.querySelector('.navbar-brand img');
   const nav = document.querySelector('.navbar');
@@ -69,28 +68,7 @@ function navbar_Background_loge_word() {
     }
   }
 }
-function topButtom(){
-  const tpButt = document.querySelector("#BackUp");
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-    tpButt.style.opacity = 0.9;
-    tpButt.style.visibility = "visible";
-    tpButt.style.bottom = "30px";
 
-  }
-  else{
-    tpButt.style.opacity = 0;
-    tpButt.style.visibility = "hidden";
-    tpButt.style.bottom = "-10px";
-
-  }
-}
-const BackUp = document.querySelector("#BackUp");
-
-BackUp.addEventListener("click", function(){
-  window.scrollTo({
-    top: 0,left: 0,behavior: "smooth"
-  })
-});
 
 
 navSlide();
